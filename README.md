@@ -11,7 +11,7 @@ Please note that this project is intended for proof of concept (PoC) purposes an
 - [Database User Setup](#database-user-setup)
 - [Azure Key Vault Access Policy](#azure-key-vault-access-policy)
 - [Running the Project](#running-the-project)
-- [Publish to Azure App Service](#publish-to-azure-app-serivce)
+- [Publish to Azure App Service](#publish-to-azure-app-service)
 
 ## Prerequisites
 
