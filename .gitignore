@@ -1,0 +1,85 @@
+# .NET Core
+bin/
+obj/
+out/
+*.dll
+*.exe
+*.log
+*.rpt
+*.pdb
+*.cache
+*.ilk
+*.idb
+*.lib
+*.ncb
+*.sdf
+*.ipch
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+.vscode/
+.vs/
+.env
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+Generated\ Files/
+TestResults/
+*.csproj.user
+*.csproj.FileListAbsolute.txt
+*.csproj.FileList.txt
+*.csproj.user
+*.csproj.FileListAbsolute.txt
+*.csproj.FileList.txt
+
+# Rider
+.idea/
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Azure Pipelines
+.azure-pipelines/
+
+# Local History for Visual Studio
+.localhistory/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# DotNetEnv
+.env
+
+# Pubslish data
+Properties/PublishProfiles
+Properties/ServiceDependencies
