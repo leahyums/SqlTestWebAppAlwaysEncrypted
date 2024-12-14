@@ -1,6 +1,6 @@
-# Project Setup Guide
+﻿# Project Setup Guide
 
-This is a test project designed to demonstrate the quick implementation of the Always Encrypted feature in a .NET Core web application. 
+This is a test project created to demonstrate the use of Azure SQL Database Always Encrypted feature in a .NET Core web application. 
 Please note that this project is intended for proof of concept (PoC) purposes and is not suitable for production use.
 
 ## Table of Contents
@@ -10,8 +10,8 @@ Please note that this project is intended for proof of concept (PoC) purposes an
 - [Entra Application Setup](#entra-application-setup)
 - [Database User Setup](#database-user-setup)
 - [Azure Key Vault Access Policy](#azure-key-vault-access-policy)
-- [Environment Variables](#environment-variables)
 - [Running the Project](#running-the-project)
+- [Publish to Azure App Service](#publish-to-azure-app-serivce)
 
 ## Prerequisites
 
@@ -48,7 +48,7 @@ CREATE TABLE [HR].[Employees]
 4. Note the "Application (client) ID" and "Directory (tenant) ID".
 5. Go to "Certificates & secrets" and create a new client secret. Note the value of the client secret.
 
-Please see https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate for more details.
+Please see [Quickstart: Register an application with the Microsoft identity platform](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate) for more details.
 
 ## Database User Setup
 
@@ -61,15 +61,13 @@ ALTER ROLE db_datareader ADD MEMBER [your-entra-app-name];
 ALTER ROLE db_datawriter ADD MEMBER [your-entra-app-name];
 ```
 
-## Azure Key Vault Access Policy
+## Azure Key Vault Access
 
 1. Go to the Azure portal and navigate to your Key Vault.
 2. Select "Access policies" and click "Add Access Policy".
 3. Select the appropriate permissions for your application.
 4. Under "Select principal", search for your Entra application and select it.
 5. Click "Add" and then "Save".
-
-
 
 ## Running the Project
 
@@ -93,11 +91,14 @@ The application should now be running and accessible. It will connect to the SQL
 
 ---
 
-## Publish the Project to Azure App Service
+## Publish to Azure App Service
 
 1. In the Solution Explorer, right-click project and select Publish.
 2. Select Azure as your target and click Next.
-3. Select Azure App Service (Windows) and click Next.
+3. Select Azure App Service (Windows) and click Next to create new Azure App Service resources.
+4. Publish the application to Azure App Service.
 
+
+----
 
 *This README was drafted by GitHub Copilot.*
